@@ -430,12 +430,8 @@ h3 {
 .fredtwo {
   width: 123px;
   height: 146px;
-  flex-shrink: 0;
   border-radius: 20px 0px 0px 20px;
   border-top: 5px solid var(--White, #FFF);
-  border-bottom: 5px solid var(--White, #FFF);
-  border-left: 5px solid var(--White, #FFF);
-  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
 }
 
 .cardtwo {
