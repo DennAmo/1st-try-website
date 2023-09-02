@@ -581,12 +581,16 @@ h3 {
     flex-direction: column;
     display:block;
   }
+  .avalaible{
+    padding-top: 10rem;
+  }
 main{
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
 }
   .booki-logo, .booki-link {
-    padding: 1px; 
+    padding-top: 1rem; 
   }
 
   .booki-link {
@@ -596,12 +600,17 @@ main{
   .link, .linka {
     text-align: center;
   }
-
+.filter{
+  flex-direction: column;
+  padding-top: 1rem;
+}
   body {
     flex-direction: column;
     padding: 0px 10px; 
   }
-
+  .container {
+    padding-top: 1rem;
+}
   .tab {
     display: flex;
     flex-direction: column;
@@ -627,6 +636,7 @@ main{
     display: block;
   }
   .footer{
+    flex-direction: column;
     width: 45rem;
   }
 }
