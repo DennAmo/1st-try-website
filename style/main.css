@@ -1,17 +1,4 @@
 /* styles.css */
-@media (min-width: 1224px) {
-  .header,
-  .head,
-  .body {
-    display: flex;
-    width: 1440px;
-    height: 1889.019px;
-    padding-bottom: 0px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 *{
   font-family: Raleway;
 }
@@ -27,7 +14,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
-  gap: 1435px;
+  gap: 87rem;
 }
 
 .booki-logo {
@@ -109,7 +96,14 @@ body {
   gap: 8px;
   align-self: stretch;
 }
-
+main{
+  display: flex;
+align-items: flex-start;
+gap: 1.875rem;
+flex: 1 0 0;
+align-self: stretch;
+border-radius: 0.9375rem;
+}
 .findhome {
   color: #000;
   font-family: Raleway;
@@ -342,21 +336,21 @@ body {
   padding-bottom: 0px;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
   flex: 1 0 0;
-  border-radius: 20px;
+  border-radius: 5%;
   background: #FFF;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .fred {
-  height: 124px;
+  object-fit: scale-down;
   align-self: stretch;
   border-radius: 20px 20px 0px 0px;
-  border: 5px solid var(--White, #FFF);
 }
 
 .title {
+  width: 90%;
+  height: 5%;
   align-self: stretch;
   color: #000;
   font-family: Raleway;
@@ -419,25 +413,26 @@ h3 {
 }
 
 .card-content {
+  width: 80%;
   display: flex;
-  padding: 0px 15px;
+  padding: 0rem 0.9375rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 0.5rem;
   align-self: stretch;
+
 }
 
 .fredtwo {
-  width: 123px;
-  height: 146px;
+  object-fit: scale-down;
   border-radius: 20px 0px 0px 20px;
-  border-top: 5px solid var(--White, #FFF);
 }
 
 .cardtwo {
+  justify-content: center;
   display: flex;
-  width: 369px;
-  height: 155px;
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
   border-radius: 20px;
   background: #FFF;
@@ -453,11 +448,10 @@ h3 {
   font-weight: 700;
   line-height: normal;
 }
-
 .tabtwo {
   display: flex;
-  width: 430px;
-  padding: 30px;
+  width: 100%;
+ padding: 8%;
   flex-direction: column;
   align-items: center;
   gap: 30px;
@@ -486,12 +480,6 @@ h3 {
   padding-top: 35px;
 }
 
-.sectionactivite {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
 .marseille {
   height: 30.019px;
   align-self: stretch;
@@ -504,17 +492,18 @@ h3 {
 }
 
 .tabthree {
-  display: flex;
+  padding-top: 2%;
+  display:flex;
   gap: 30px;
-
 }
-
+.cardthreee {
+  border-radius: 35px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+}
 .cardthree {
-  display: flex;
-  height: 480px;
+  object-fit: none;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
   flex: 1 0 0;
 }
 
@@ -536,8 +525,6 @@ h3 {
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
-  border-radius: 0px 0px 20px 20px;
-  background: whitesmoke;
 }
 
 .footer {
@@ -570,5 +557,4 @@ h3 {
   font-weight: 700;
   margin-left: 20px;
 }
-
 /*# sourceMappingURL=main.css.map */

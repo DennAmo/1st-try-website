@@ -160,7 +160,7 @@
                 </section>
                 <div class="plus">Afficher Plus</div>
             </div>
-        </main>
+        
         <section class="tabtwoo">
             <div class="tabtwo">
                 <div class="titletabtwo">
@@ -168,7 +168,7 @@
                     <img src="./assets/Icon.png" class="iconnn">
                 </div>
                 <section class="cardtwo">
-                    <div class="fredtwo"><img src="./assets/hebergements/fredtwo.png" alt=""></div>
+                    <img src="./assets/hebergements/fredtwo.png" class="fredtwo">
                     <div class="card-contenttwo">
                         <h3 class="titletwo">Hôtel du port</h3>
                         <p class="nighttwo">Nuit à partir de 52<span class="euro">€</span></p>
@@ -214,6 +214,7 @@
                 </section>
             </div>
         </section>
+    </main> 
     </section>
 
 
@@ -222,25 +223,25 @@
         <div class=" tabthreee">
             <div class="marseille">Activités à Marseille</div>
             <div class="tabthree">
-                <div class="Card">
+                <div class="cardthreee">
                     <img class="cardthree" src="./assets/hebergements/cardthree.png" />
                     <div class="border">
                         <div class="vieuxports">Fort de Pomogue</div>
                     </div>
                 </div>
-                <div class="Card">
+                <div class="cardthreee">
                     <img class="cardthree" src="./assets/hebergements/cardthree.png" />
                     <div class="border">
                         <div class="vieuxports">Fort de Pomogue</div>
                     </div>
                 </div>
-                <div class="Card">
+                <div class="cardthreee">
                     <img class="cardthree" src="./assets/hebergements/cardthree.png" />
                     <div class="border">
                         <div class="vieuxports">Fort de Pomogue</div>
                     </div>
                 </div>
-                <div class="Card">
+                <div class="cardthreee">
                     <img class="cardthree" src="./assets/hebergements/cardthree.png" />
                     <div class="border">
                         <div class="vieuxports">Fort de Pomogue</div>
@@ -273,7 +274,23 @@
             </ul>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var linkHebergements = document.querySelector('.link');
+            var linkActivites = document.querySelector('.linka');
 
+            var linkWidthHebergements = linkHebergements.offsetWidth;
+            linkHebergements.style.setProperty('--link-width', linkWidthHebergements + "%");
+
+            linkActivites.addEventListener('mouseover', function () {
+                var linkWidth = this.offsetWidth;
+                this.style.setProperty('--link-width', linkWidth + "px");
+            });
+
+            linkActivites.addEventListener('mouseout', function () {
+                this.style.removeProperty('--link-width');
+            });
+        });
+    </script>
 </body>
-
 </html>
