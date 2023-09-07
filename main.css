@@ -10,6 +10,7 @@ header .logolayout {
   align-items: flex-start;
 }
 header .logolayout .logobooki {
+  margin-right: 65rem;
   width: 3.81813rem;
   height: 1.1875rem;
 }
@@ -140,8 +141,7 @@ body .search-input {
   font-weight: 700;
   line-height: normal;
 }
-body .night,
-body .nighttwo {
+body .night, body .nighttwo {
   color: #000;
   font-family: Raleway;
   font-size: 0.875rem;
@@ -214,6 +214,10 @@ body .i {
   width: 1.5rem;
   height: 1.5rem;
 }
+body .containertab {
+  display: flex;
+  align-items: center;
+}
 body .tabone {
   display: flex;
   flex-direction: column;
@@ -278,6 +282,7 @@ body .euro {
 body .secondcolumn {
   display: flex;
   align-items: flex-start;
+  align-self: stretch;
 }
 body .plus {
   align-self: stretch;
@@ -296,6 +301,12 @@ body .tabtwo {
   border-radius: 0.9375rem;
   background: var(--Grey, #F2F2F2);
 }
+body .tabtwolayout {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-direction: column;
+}
 body h3 {
   color: #000;
   font-family: Raleway;
@@ -313,28 +324,14 @@ body .titletabtwo {
 body .cardtwo {
   display: flex;
   height: 9rem;
+  justify-content: center;
   align-items: center;
   border-radius: 1.25rem;
   background: #FFF;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
-body .nighttwo {
-  color: #000;
-  font-family: Raleway;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-body h5 {
-  color: #000;
-  font-family: Raleway;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
 body .cardcontenttwo {
+  width: 15.375rem;
   height: 8.375rem;
 }
 body .sr-only {
@@ -346,6 +343,7 @@ body .fredtwo {
 }
 body .sectionactivite {
   display: flex;
+  padding: 1.875rem;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
@@ -371,11 +369,13 @@ body .tabthree {
   align-self: stretch;
 }
 body .cardthree {
+  height: 23.75rem;
   flex-shrink: 0;
   align-self: stretch;
 }
 body .cardthreelayout {
   display: flex;
+  height: 27.4375rem;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -440,4 +440,82 @@ body :root {
   --main-color: #0065FC;
   --main-bg-color: #F2F2F2;
   --filter-bg-color: #DEEBFF;
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding-right: 0px;
+    gap: 10.375rem;
+  }
+  header .buttonmenu {
+    width: 20.53756rem;
+    padding: 0rem 1.5625rem;
+    gap: 4.25rem;
+  }
+  header .buttonlayout {
+    gap: 4.25rem;
+  }
+  body {
+    display: flex;
+    padding: 0rem 3.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.1875rem;
+    align-self: stretch;
+  }
+  body .menulayout {
+    gap: 2.1875rem;
+  }
+  body .menutextlayout {
+    gap: 0.5rem;
+  }
+  body .searchmodulelayout {
+    width: 23.5625rem;
+    height: 3.0625rem;
+    gap: 1.5rem;
+  }
+  body .filterbarlayout {
+    height: 3.125rem;
+    gap: 0.9375rem;
+  }
+  body .infolayout {
+    display: flex;
+    height: 1.5rem;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+  }
+  body .containertab {
+    gap: 2.5rem;
+  }
+  body .tabone {
+    padding: 1.875rem;
+  }
+  body .firstcolumn, body .secondcolumn {
+    margin: 1rem;
+    gap: 1.5rem;
+  }
+  body .cardcontent {
+    padding: 0rem 0.9375rem;
+  }
+  body .tabtwo {
+    width: 26.8125rem;
+    padding: 1.875rem;
+    gap: 1.875rem;
+  }
+  body .tabtwolayout {
+    gap: 1.875rem;
+  }
+  body .titletabtwo {
+    gap: 3.17656rem;
+  }
+  body .cardtwo {
+    height: 9rem;
+  }
+  body .cardcontenttwo {
+    width: 15.375rem;
+    height: 8.375rem;
+    padding: 0.625rem 0.3125rem 0.3125rem 0.9375rem;
+    gap: 1.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

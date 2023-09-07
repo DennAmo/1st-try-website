@@ -1,0 +1,80 @@
+@media (max-width: 1024px) {
+    header{
+        gap: 32.41256rem; 
+    }
+    .buttonmenu{
+        gap: 4.25rem;
+        padding: 0rem 3.125rem;
+    }
+.buttonlayout{
+    gap: 4.25rem;
+}
+.logolayout{
+    padding: 1.875rem 3.125rem;
+    gap: 0.6rem;
+}
+body{
+
+padding: 0rem 3.125rem;
+gap: 2.1875rem;
+}
+.menulayout{
+gap: 2.1875rem;
+}
+.menutextlayout{
+    gap: 0.5rem;
+}
+#filterbutton2{
+    width: 10rem;
+}
+.containertab{}
+.tabone{
+padding: 1.875rem;
+gap: 1.875rem;
+margin-bottom: 3.12rem;
+}
+.firstcolumn, .secondcolumn{
+    gap: 1.875rem;
+}
+.tabtwolayout{
+    display: flex;
+    padding: 1.875rem;
+    align-items: flex-start;
+    gap: 1.25rem;
+    align-self: stretch;
+}
+.cardcontenttwo{
+    width: 10rem;
+}
+h3{
+    padding-left: 2rem;
+}
+.titletabtwo{
+    gap: 35rem;
+}
+.cardthree{
+    height: 12.5rem;
+}
+.sectionactivite{
+    padding: 1.875rem;
+gap: 1.875rem;
+}
+.tabthree{
+    gap: 1.875rem;
+}
+.border{
+    padding: 0.9rem;
+}
+footer{
+    gap: 1.875rem;
+}
+.footergroup{
+    display: flex;
+padding: 1.25rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.9375rem;
+flex: 1 0 0;
+align-self: stretch;
+}
+  }
