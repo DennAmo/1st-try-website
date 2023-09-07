@@ -1,4 +1,4 @@
-@media (min-width: 400px) {
+@media (min-width: 375px) and (max-width: 1024px) {
     header{
         gap: 32.41256rem; 
     }
