@@ -80,13 +80,6 @@ body .citycentertext {
   font-weight: 400;
   line-height: normal;
 }
-body .searchbutton {
-  display: flex;
-  align-items: center;
-  border-radius: 0rem 0.9375rem 0.9375rem 0rem;
-  border: #0065FC;
-  background: #0065FC;
-}
 body .searchmodulelayout {
   display: flex;
   align-items: center;
@@ -101,21 +94,6 @@ body .locationimglayout {
 }
 body .searchtext {
   color: black;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-body #searchbutton {
-  display: flex;
-  height: 3.0625rem;
-  align-items: center;
-  border-radius: 0rem 0.9375rem 0.9375rem 0rem;
-  border: 1px solid #0065FC;
-  background: #0065FC;
-  color: var(--White, #FFF);
   text-align: center;
   font-family: Raleway;
   font-size: 1.125rem;
@@ -340,10 +318,6 @@ body .cardcontenttwo {
 body .sr-only {
   display: flex;
 }
-body .fredtwo {
-  width: 7.6875rem;
-  height: 9rem;
-}
 body .sectionactivite {
   display: flex;
   flex-direction: column;
@@ -395,7 +369,6 @@ body .border {
 body footer {
   display: flex;
   align-items: flex-start;
-  align-self: stretch;
   background: var(--Grey, #F2F2F2);
 }
 body ul {

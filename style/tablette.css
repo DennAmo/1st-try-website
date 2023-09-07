@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (min-width: 400px) {
     header{
         gap: 32.41256rem; 
     }
@@ -13,13 +13,34 @@
     padding: 1.875rem 3.125rem;
     gap: 0.6rem;
 }
-body{
 
-padding: 0rem 3.125rem;
-gap: 2.1875rem;
+    #searchbutton {
+        display: flex;
+        height: 3.0625rem;
+        align-items: center;
+        border-radius: 0rem 0.9375rem 0.9375rem 0rem;
+        border: 1px solid #0065FC;
+        background: #0065FC;
+        color: var(--White, #FFF);
+        text-align: center;
+        font-family: Raleway;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+body{
+    padding: 0rem 3.125rem;
+    gap: 2.1875rem;
+    }
+.fredtwo{
+height: 146px;
+width: 91.6px;
 }
 .menulayout{
 gap: 2.1875rem;
+padding-left: 3.12rem;
 }
 .menutextlayout{
     gap: 0.5rem;
@@ -27,7 +48,9 @@ gap: 2.1875rem;
 #filterbutton2{
     width: 10rem;
 }
-.containertab{}
+.containertab{
+    padding-left: 3.12rem;
+}
 .tabone{
 padding: 1.875rem;
 gap: 1.875rem;
@@ -43,14 +66,18 @@ margin-bottom: 3.12rem;
     gap: 1.25rem;
     align-self: stretch;
 }
+.cardcontent{
+    margin-left: 1rem;
+}
 .cardcontenttwo{
     width: 10rem;
+    margin-left: 1rem;
 }
 h3{
     padding-left: 2rem;
 }
 .titletabtwo{
-    gap: 35rem;
+    gap: 31rem;
 }
 .cardthree{
     height: 12.5rem;
@@ -58,6 +85,7 @@ h3{
 .sectionactivite{
     padding: 1.875rem;
 gap: 1.875rem;
+padding-left: 10rem;
 }
 .tabthree{
     gap: 1.875rem;
@@ -67,14 +95,12 @@ gap: 1.875rem;
 }
 footer{
     gap: 1.875rem;
+    margin-left: 3.12rem;
+    width: 110%;
 }
 .footergroup{
-    display: flex;
-padding: 1.25rem;
-flex-direction: column;
-align-items: flex-start;
+padding: 1.25rem;;
 gap: 0.9375rem;
 flex: 1 0 0;
-align-self: stretch;
 }
   }

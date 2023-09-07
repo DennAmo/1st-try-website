@@ -1,6 +1,6 @@
 def create_diary_entry(title, description):
-    entry = f"Title: {title}\nDescription: {description}\n\n"
-    with open("diary.txt", "a") as diary_file:
+    entry = f"<h1>{title}</h1>\n<h2>{description}</h2>\n\n"
+    with open("diary.html", "a") as diary_file:
         diary_file.write(entry)
     print("Diary entry added successfully!")
 
