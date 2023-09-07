@@ -1,25 +1,17 @@
 /* styles.css */
-:root {
-  --main-color: #0065FC;
-  --main-bg-color: #F2F2F2;
-  --filter-bg-color: #DEEBFF;
-}
-
 header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 59.375rem;
-  align-self: stretch;
 }
 header .logolayout {
   display: flex;
   padding: 1.875rem 3.125rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.625rem;
 }
 header .logolayout .logobooki {
+  margin-right: 65rem;
   width: 3.81813rem;
   height: 1.1875rem;
 }
@@ -29,13 +21,11 @@ header .buttonmenu {
   padding: 0rem 1.5625rem;
   flex-direction: column;
   align-items: center;
-  gap: 4.25rem;
 }
 header .buttonmenu .buttonlayout {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  gap: 4.25rem;
 }
 header .buttonmenu #button1,
 header .buttonmenu #button2 {
@@ -67,14 +57,12 @@ body {
   padding: 0rem 3.125rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2.1875rem;
   align-self: stretch;
 }
 body .menulayout {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2.1875rem;
   align-self: stretch;
 }
 body .menutextlayout {
@@ -82,7 +70,6 @@ body .menutextlayout {
   height: 3.3125rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
   align-self: stretch;
 }
 body .findhometext {
@@ -112,6 +99,7 @@ body .searchbutton {
   background: #0065FC;
 }
 body .searchmodulelayout {
+  margin-block: 2rem;
   display: flex;
   width: 23.5625rem;
   height: 3.0625rem;
@@ -152,6 +140,14 @@ body #searchbutton {
   font-weight: 700;
   line-height: normal;
 }
+body .readt {
+  color: #000;
+  font-family: Raleway;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 body .search-input {
   color: Black;
   text-align: center;
@@ -161,12 +157,20 @@ body .search-input {
   font-weight: 700;
   line-height: normal;
 }
+body .night, body .nighttwo {
+  color: #000;
+  font-family: Raleway;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 body .filterbarlayout {
   display: flex;
   height: 3.125rem;
   align-items: center;
-  gap: 0.9375rem;
   color: #000;
+  margin-bottom: 2rem;
   text-align: center;
   font-family: Raleway;
   font-size: 1.125rem;
@@ -217,7 +221,7 @@ body .infolayout {
   display: flex;
   height: 1.5rem;
   align-items: center;
-  gap: 0.625rem;
+  margin-bottom: 2rem;
   align-self: stretch;
   color: #000;
   font-family: Raleway;
@@ -227,6 +231,7 @@ body .infolayout {
   line-height: normal;
 }
 body .i {
+  margin-right: 0.4rem;
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -234,7 +239,6 @@ body .containertab {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  align-self: stretch;
 }
 body .tabone {
   display: flex;
@@ -320,8 +324,6 @@ body .plus {
 }
 body .tabtwo {
   display: flex;
-  width: 26.8125rem;
-  padding: 1.875rem;
   flex-direction: column;
   align-items: center;
   gap: 1.875rem;
@@ -331,7 +333,6 @@ body .tabtwo {
 }
 body .tabtwolayout {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   gap: 1.875rem;
   align-self: stretch;
@@ -467,4 +468,515 @@ body .vieuxports {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+@media (min-width: 1025px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  header .logolayout {
+    display: flex;
+    padding: 1.875rem 3.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .logolayout .logobooki {
+    margin-right: 65rem;
+    width: 3.81813rem;
+    height: 1.1875rem;
+  }
+  header .buttonmenu {
+    display: flex;
+    width: 20.53756rem;
+    padding: 0rem 1.5625rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .buttonmenu .buttonlayout {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  header .buttonmenu #button1,
+  header .buttonmenu #button2 {
+    background-color: white;
+    border-style: hidden;
+  }
+  header .buttonmenu #button1 {
+    display: block;
+    color: #0065FC;
+    width: 7.0625rem;
+    height: 2.1875rem;
+  }
+  header .buttonmenu #button1::before {
+    content: "";
+    height: 0.14rem;
+    background-color: blue;
+    width: 100%;
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+  }
+  header .buttonmenu #button2 {
+    width: 3.9375rem;
+    height: 2.1875rem;
+  }
+  body {
+    display: flex;
+    padding: 0rem 3.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  body .menulayout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  body .menutextlayout {
+    display: flex;
+    height: 3.3125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  body .findhometext {
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body .citycentertext {
+    color: #000;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  body .searchbutton {
+    display: flex;
+    height: 3.0625rem;
+    padding: 0.9375rem 1rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0rem 0.9375rem 0.9375rem 0rem;
+    border: #0065FC;
+    background: #0065FC;
+  }
+  body .searchmodulelayout {
+    margin-block: 2rem;
+    display: flex;
+    width: 23.5625rem;
+    height: 3.0625rem;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 0.9375rem;
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+  }
+  body .locationimglayout {
+    width: 3.125rem;
+    height: 3.0625rem;
+    flex-shrink: 0;
+  }
+  body .searchtext {
+    color: black;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body #searchbutton {
+    display: flex;
+    height: 3.0625rem;
+    padding: 0.9375rem 1rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0rem 0.9375rem 0.9375rem 0rem;
+    border: 1px solid #0065FC;
+    background: #0065FC;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body .readt {
+    color: #000;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  body .search-input {
+    color: Black;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body .night, body .nighttwo {
+    color: #000;
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  body .filterbarlayout {
+    display: flex;
+    height: 3.125rem;
+    align-items: center;
+    color: #000;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body .flag {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+  body #filterbutton {
+    background: white;
+    display: flex;
+    height: 3.125rem;
+    padding: 0.25rem 1.1875rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.5625rem;
+    border: 2px solid #D9D9D9;
+    color: var(--Black, #000);
+    font-family: Raleway;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body #filterbutton2 {
+    background: white;
+    display: flex;
+    height: 3.125rem;
+    padding: 0.25rem 1.1875rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.5625rem;
+    border: 2px solid #D9D9D9;
+    color: var(--Black, #000);
+    font-family: Raleway;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body #filterbutton2:hover {
+    background: #DEEBFF;
+  }
+  body .infolayout {
+    display: flex;
+    height: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    align-self: stretch;
+    color: #000;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  body .i {
+    margin-right: 0.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  body .containertab {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  body .tabone {
+    display: flex;
+    padding: 1.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+    border-radius: 0.9375rem;
+    background: var(--Grey, #F2F2F2);
+  }
+  body h4 {
+    align-self: stretch;
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body .firstcolumn {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.875rem;
+  }
+  body .card {
+    display: flex;
+    border-style: hidden;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    flex: 1 0 0;
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  body .fred {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    height: 7.75rem;
+    align-self: stretch;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+  }
+  body .cardcontent {
+    padding: 0rem 0.9375rem;
+    align-self: stretch;
+  }
+  body .fa-solid {
+    color: var(--main-color);
+    width: 14.294px;
+    height: 13.25px;
+    flex-shrink: 0;
+  }
+  body .neutral-star {
+    color: var(--main-bg-color);
+    width: 14.294px;
+    height: 13.25px;
+    flex-shrink: 0;
+  }
+  body .euro {
+    color: #000;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  body .secondcolumn {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+  }
+  body .plus {
+    align-self: stretch;
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body .tabtwo {
+    display: flex;
+    width: 26.8125rem;
+    padding: 1.875rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    align-self: stretch;
+    border-radius: 0.9375rem;
+    background: var(--Grey, #F2F2F2);
+  }
+  body .tabtwolayout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+  }
+  body .titletabtwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.17656rem;
+    align-self: stretch;
+  }
+  body .cardtwo {
+    display: flex;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  body .cardcontenttwo {
+    width: 15.375rem;
+    height: 8.375rem;
+    padding: 0.625rem 0.3125rem 0.3125rem 0.9375rem;
+  }
+  body .sr-only {
+    display: flex;
+  }
+  body .fredtwo {
+    width: 7.6875rem;
+    height: 9rem;
+  }
+  body .sectionactivite {
+    display: flex;
+    padding: 1.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+  }
+  body .activitelayout {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+  }
+  body .marseille {
+    height: 1.87619rem;
+    align-self: stretch;
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body .tabthree {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+  }
+  body .cardthree {
+    height: 23.75rem;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+  body .cardthreelayout {
+    display: flex;
+    height: 27.4375rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 1.25rem;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  body .border {
+    display: flex;
+    padding: 1.25rem 1.1875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
+    background: White, #FFF;
+  }
+  body footer {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    background: var(--Grey, #F2F2F2);
+  }
+  body ul {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9375rem;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  body .footergroup {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9375rem;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  body .h7 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  body li {
+    color: #000;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  body .vieuxports {
+    color: #000;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    justify-content: center;
+  }
+  body {
+    display: flex;
+    padding: 0rem 3.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.1875rem;
+    align-self: stretch;
+  }
+  .containertab {
+    flex-wrap: wrap;
+  }
+  .tabtwolayout {
+    display: flex;
+    flex-direction: row;
+  }
+  .tabtwo {
+    display: flex;
+    width: 92.8125rem;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    align-self: stretch;
+    border-radius: 0.9375rem;
+    background: var(--Grey, #F2F2F2);
+  }
+}
+:root {
+  --main-color: #0065FC;
+  --main-bg-color: #F2F2F2;
+  --filter-bg-color: #DEEBFF;
 }/*# sourceMappingURL=main.css.map */
