@@ -1,4 +1,18 @@
 /* styles.css */
+* {
+  /*Reset CSS */
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -21,29 +35,19 @@ header .buttonmenu {
 header .buttonmenu .buttonlayout {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
 }
 header .buttonmenu #button1,
 header .buttonmenu #button2 {
   background-color: white;
   border-style: hidden;
 }
-header .buttonmenu #button1 {
-  display: block;
-  color: #0065FC;
-}
-header .buttonmenu #button1::before {
-  content: "";
-  height: 0.14rem;
-  background-color: blue;
-  width: 100%;
-  position: absolute;
-  top: -0.4rem;
-  left: 0;
+header .buttonmenu #button1:hover,
+header .buttonmenu #button2:hover {
+  border-top: 2px solid blue;
+  color: blue;
 }
 header .buttonmenu #button2 {
   width: 3.9375rem;
-  height: 2.1875rem;
 }
 
 body {
@@ -65,26 +69,13 @@ body .menutextlayout {
   align-self: stretch;
 }
 body .findhometext {
-  color: #000;
-  font-family: Raleway;
   font-size: 1.375rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-}
-body .citycentertext {
-  color: #000;
-  font-family: Raleway;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 body .searchmodulelayout {
   display: flex;
   align-items: center;
   border-radius: 0.9375rem;
-  border: 1px solid #F2F2F2;
   background: #FFF;
 }
 body .locationimglayout {
@@ -95,48 +86,27 @@ body .locationimglayout {
 body .searchtext {
   color: black;
   text-align: center;
-  font-family: Raleway;
   font-size: 1.125rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-}
-body .readt {
-  color: #000;
-  font-family: Raleway;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 body .search-input {
   color: Black;
   text-align: center;
-  font-family: Raleway;
   font-size: 1.125rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  border: 1px solid #F2F2F2;
 }
 body .night,
 body .nighttwo {
-  color: #000;
-  font-family: Raleway;
   font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 body .filterbarlayout {
-  display: flex;
   align-items: center;
-  color: #000;
   text-align: center;
-  font-family: Raleway;
   font-size: 1.125rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 body .flag {
   width: 1.375rem;
@@ -144,34 +114,16 @@ body .flag {
 }
 body #filterbutton {
   background: white;
-  display: flex;
-  height: 3.125rem;
-  padding: 0.25rem 1.1875rem;
-  align-items: center;
-  border-radius: 1.5625rem;
-  border: 2px solid #D9D9D9;
-  color: var(--Black, #000);
-  font-family: Raleway;
-  font-size: 1.0625rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-body #filterbutton2 {
-  background: white;
-  display: flex;
   height: 3.125rem;
   align-items: center;
   border-radius: 1.5625rem;
   border: 2px solid #D9D9D9;
   color: var(--Black, #000);
-  font-family: Raleway;
   font-size: 1.0625rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  min-width: 10rem;
 }
-body #filterbutton2:hover {
+body #filterbutton:hover {
   background: #DEEBFF;
 }
 body .infolayout {
@@ -180,12 +132,6 @@ body .infolayout {
   align-items: center;
   margin-bottom: 2rem;
   align-self: stretch;
-  color: #000;
-  font-family: Raleway;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 body .i {
   margin-right: 0.4rem;
@@ -198,34 +144,29 @@ body .tabone {
   align-items: flex-start;
   align-self: stretch;
   border-radius: 0.9375rem;
-  background: var(--Grey, #F2F2F2);
+}
+body .tabone {
+  order: 1;
+}
+body .tabtwo {
+  order: 0;
 }
 body h4 {
   align-self: stretch;
-  color: #000;
-  font-family: Raleway;
   font-size: 1.375rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 body .firstcolumn {
-  display: flex;
   align-items: flex-start;
 }
 body .card {
-  display: flex;
   border-style: hidden;
-  flex-direction: column;
-  align-items: center;
   flex: 1 0 0;
   border-radius: 1.25rem;
   background: #FFF;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 body .fred {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
   height: 7.75rem;
   align-self: stretch;
   border-radius: 1.25rem 1.25rem 0rem 0rem;
@@ -246,25 +187,17 @@ body .neutral-star {
   flex-shrink: 0;
 }
 body .euro {
-  color: #000;
-  font-family: Raleway;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 body .secondcolumn {
-  display: flex;
   align-items: flex-start;
+  margin-left: 0.3rem;
 }
 body .plus {
   align-self: stretch;
-  color: #000;
-  font-family: Raleway;
   font-size: 1.125rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 body .tabtwo {
   display: flex;
@@ -275,12 +208,8 @@ body .tabtwo {
   background: var(--Grey, #F2F2F2);
 }
 body h3 {
-  color: #000;
-  font-family: Raleway;
   font-size: 1.375rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   width: 18.76925rem;
 }
 body .titletabtwo {
@@ -290,27 +219,16 @@ body .titletabtwo {
 }
 body .cardtwo {
   display: flex;
-  height: 9rem;
   align-items: center;
   border-radius: 1.25rem;
   background: #FFF;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 body .nighttwo {
-  color: #000;
-  font-family: Raleway;
   font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 body h5 {
-  color: #000;
-  font-family: Raleway;
-  font-size: 1rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 body .cardcontenttwo {
   height: 8.375rem;
@@ -332,12 +250,8 @@ body .activitelayout {
 body .marseille {
   height: 1.87619rem;
   align-self: stretch;
-  color: #000;
-  font-family: Raleway;
   font-size: 1.375rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 body .tabthree {
   display: flex;
@@ -386,28 +300,11 @@ body .footergroup {
   align-self: stretch;
 }
 body .h7 {
-  color: #000;
-  font-family: Raleway;
   font-size: 1.125rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-}
-body li {
-  color: #000;
-  font-family: Raleway;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 body .vieuxports {
-  color: #000;
-  font-family: Raleway;
-  font-size: 1rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 body :root {
   --main-color: #0065FC;

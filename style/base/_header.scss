@@ -1,3 +1,17 @@
+* {
+    /*Reset CSS */
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -19,40 +33,25 @@ header {
         flex-direction: column;
         align-items: center;
 
-
         .buttonlayout {
             display: flex;
             justify-content: flex-end;
-            align-items: flex-end;
 
         }
-
         #button1,
         #button2 {
             background-color: white;
-            border-style: hidden;
+            border-style: hidden
         }
 
-        #button1 {
-            display: block;
-            color: #0065FC;
-        }
-
-
-        #button1::before {
-            content: "";
-
-            height: 0.14rem;
-            background-color: blue;
-            width: 100%;
-            position: absolute;
-            top: -0.40rem;
-            left: 0;
+        #button1:hover,
+        #button2:hover {
+            border-top: 2px solid blue;
+            color: blue;
         }
 
         #button2 {
             width: 3.9375rem;
-            height: 2.1875rem;
         }
     }
 }
@@ -78,28 +77,16 @@ body {
     }
 
     .findhometext {
-        color: #000;
-        font-family: Raleway;
         font-size: 1.375rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
     }
 
-    .citycentertext {
-        color: #000;
-        font-family: Raleway;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
+    .citycentertext {}
 
     .searchmodulelayout {
         display: flex;
         align-items: center;
         border-radius: 0.9375rem;
-        border: 1px solid #F2F2F2;
         background: #FFF;
     }
 
@@ -112,94 +99,49 @@ body {
     .searchtext {
         color: black;
         text-align: center;
-        font-family: Raleway;
         font-size: 1.125rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
-    }
-
-   
-
-    .readt {
-        color: #000;
-        font-family: Raleway;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
     .search-input {
         color: Black;
         text-align: center;
-        font-family: Raleway;
         font-size: 1.125rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        padding-bottom: 0.80rem;
+        padding-top: 0.80rem;
+        border: 1px solid #F2F2F2;
     }
 
     .night,
     .nighttwo {
-        color: #000;
-        font-family: Raleway;
         font-size: 0.875rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
     .filterbarlayout {
-        display: flex;
-
         align-items: center;
-        color: #000;
         text-align: center;
-        font-family: Raleway;
         font-size: 1.125rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
     }
 
     .flag {
         width: 1.375rem;
         height: 1.375rem;
     }
-
     #filterbutton {
         background: white;
-        display: flex;
-        height: 3.125rem;
-        padding: 0.25rem 1.1875rem;
-        align-items: center;
-        border-radius: 1.5625rem;
-        border: 2px solid #D9D9D9;
-        color: var(--Black, #000);
-        font-family: Raleway;
-        font-size: 1.0625rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    #filterbutton2 {
-        background: white;
-        display: flex;
         height: 3.125rem;
         align-items: center;
         border-radius: 1.5625rem;
         border: 2px solid #D9D9D9;
         color: var(--Black, #000);
-        font-family: Raleway;
         font-size: 1.0625rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
+            min-width: 10rem;
     }
 
-    #filterbutton2:hover {
+    #filterbutton:hover {
         background: #DEEBFF;
     }
 
@@ -209,12 +151,6 @@ body {
         align-items: center;
         margin-bottom: 2rem;
         align-self: stretch;
-        color: #000;
-        font-family: Raleway;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
     .i {
@@ -229,29 +165,26 @@ body {
         align-items: flex-start;
         align-self: stretch;
         border-radius: 0.9375rem;
-        background: var(--Grey, #F2F2F2);
     }
-
+    .tabone {
+        order: 1;
+    }
+    
+    .tabtwo {
+        order: 0;
+    }
     h4 {
         align-self: stretch;
-        color: #000;
-        font-family: Raleway;
         font-size: 1.375rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
     }
 
     .firstcolumn {
-        display: flex;
         align-items: flex-start;
     }
 
     .card {
-        display: flex;
         border-style: hidden;
-        flex-direction: column;
-        align-items: center;
         flex: 1 0 0;
         border-radius: 1.25rem;
         background: #FFF;
@@ -259,7 +192,6 @@ body {
     }
 
     .fred {
-        object-fit: scale-down;
         height: 7.75rem;
         align-self: stretch;
         border-radius: 1.25rem 1.25rem 0rem 0rem;
@@ -284,27 +216,19 @@ body {
     }
 
     .euro {
-        color: #000;
-        font-family: Raleway;
         font-size: 14px;
-        font-style: normal;
         font-weight: 600;
-        line-height: normal;
     }
 
     .secondcolumn {
-        display: flex;
         align-items: flex-start;
+        margin-left: 0.3rem;
     }
 
     .plus {
         align-self: stretch;
-        color: #000;
-        font-family: Raleway;
         font-size: 1.125rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
     }
 
     .tabtwo {
@@ -317,12 +241,8 @@ body {
     }
 
     h3 {
-        color: #000;
-        font-family: Raleway;
         font-size: 1.375rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
         width: 18.76925rem;
         ;
     }
@@ -335,27 +255,18 @@ body {
 
     .cardtwo {
         display: flex;
-        height: 9rem;
         align-items: center;
         border-radius: 1.25rem;
         background: #FFF;
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     }
-    .nighttwo{
-        color: #000;
-      font-family: Raleway;
-      font-size: 0.875rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      }
+
+    .nighttwo {
+        font-size: 0.875rem;
+    }
+
     h5 {
-        color: #000;
-        font-family: Raleway;
-        font-size: 1rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
     }
 
     .cardcontenttwo {
@@ -382,12 +293,8 @@ body {
     .marseille {
         height: 1.87619rem;
         align-self: stretch;
-        color: #000;
-        font-family: Raleway;
         font-size: 1.375rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
     }
 
     .tabthree {
@@ -444,30 +351,12 @@ body {
     }
 
     .h7 {
-        color: #000;
-        font-family: Raleway;
         font-size: 1.125rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
-    }
-
-    li {
-        color: #000;
-        font-family: Raleway;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 
     .vieuxports {
-        color: #000;
-        font-family: Raleway;
-        font-size: 1rem;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
 
     }
 

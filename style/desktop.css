@@ -1,20 +1,23 @@
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1600px){
   header {
     gap: 62rem;
   }
+  
 .logolayout{
 padding-top: 1.875rem;
 gap: 0.625rem;
 }
-  header .buttonmenu {
+ .buttonmenu {
     width: 20.53756rem;
     padding: 0rem 1.5625rem;
     gap: 4.25rem;
   }
 
-  header .buttonlayout {
+ .buttonlayout {
+    padding-top: 0.8rem;
     gap: 4.25rem;
   }
+
 #searchbutton{
     display: flex;
     height: 3.0625rem;
@@ -43,26 +46,30 @@ gap: 0.625rem;
     width: 7.6875rem;
     height: 9rem;
 }
-  body .menulayout {
+   .menulayout {
     gap: 2.1875rem;
   }
 
-  body .menutextlayout {
+.tabtwo {
+  padding: 1.875rem;
+}
+   .menutextlayout {
     gap: 0.5rem;
   }
 
-  body .searchmodulelayout {
+   .searchmodulelayout {
     width: 23.5625rem;
     height: 3.0625rem;
     gap: 1.5rem;
   }
 
-  body .filterbarlayout {
+   .filterbarlayout {
     height: 3.125rem;
     gap: 0.9375rem;
+      display: flex;
   }
 
-  body .infolayout {
+   .infolayout {
     display: flex;
     height: 1.5rem;
     align-items: center;
@@ -73,28 +80,28 @@ gap: 0.625rem;
   .containertab {
     display: flex;
     align-items: center;
-gap: 2.5rem
+gap: 2.5rem;
+flex-direction: row-reverse;
 }
 
-  body .tabone {
+   .tabone {
     padding: 1.875rem;
+    background: var(--Grey, #F2F2F2);
   }
 
-  body .firstcolumn,
-  body .secondcolumn {
+   .firstcolumn,
+   .secondcolumn {
     margin: 1rem;
     gap: 1.5rem;
+    display: flex;
   }
 
-  body .cardcontent {
+   .cardcontent {
     padding: 0rem 0.9375rem;
   }
 
-  body .tabtwo {
-    padding: 1.875rem;
-  }
 
-  body .titletabtwo {
+   .titletabtwo {
     gap: 3.17656rem;
   }
 .tabtwolayout{
@@ -102,13 +109,13 @@ gap: 2.5rem
   flex-direction: column;
   gap: 1.6rem;
 }
-  body .cardtwo {
+   .cardtwo {
     height: 9rem;
   }
 .cardthree{
   height: 23.75rem;
 }
-  body .cardcontenttwo {
+   .cardcontenttwo {
     width: 15.375rem;
     height: 8.375rem;
     padding: 0.625rem 0.3125rem 0.3125rem 0.9375rem;
@@ -141,5 +148,6 @@ gap: 2.5rem
   footer{
     align-self: stretch;
     margin-left: 8rem;
+    width: 100%;
   }
 }

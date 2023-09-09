@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 1024px) {
+@media (min-width: 376px) and (max-width: 1024px) {
     header{
         gap: 32.41256rem; 
     }
@@ -8,6 +8,7 @@
     }
 .buttonlayout{
     gap: 4.25rem;
+    padding-top: 0.8rem;
 }
 .logolayout{
     padding: 1.875rem 3.125rem;
@@ -42,11 +43,14 @@ width: 91.6px;
 gap: 2.1875rem;
 padding-left: 3.12rem;
 }
+.filterbarlayout{
+    display: flex;
+}
 .menutextlayout{
     gap: 0.5rem;
 }
-#filterbutton2{
-    width: 10rem;
+.buttongroup{
+    display: flex;
 }
 .containertab{
     padding-left: 3.12rem;
@@ -55,8 +59,10 @@ padding-left: 3.12rem;
 padding: 1.875rem;
 gap: 1.875rem;
 margin-bottom: 3.12rem;
+background: var(--Grey, #F2F2F2);
 }
 .firstcolumn, .secondcolumn{
+    display: flex;
     gap: 1.875rem;
 }
 .tabtwolayout{
@@ -96,7 +102,6 @@ padding-left: 10rem;
 footer{
     gap: 1.875rem;
     margin-left: 3.12rem;
-    width: 110%;
 }
 .footergroup{
 padding: 1.25rem;;
