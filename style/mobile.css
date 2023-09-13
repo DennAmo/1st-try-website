@@ -13,9 +13,6 @@ margin-left: 3.5rem;
 .buttonlayout{
   gap: 4rem;
 }
-#button2{
-  padding-left: 1.5rem;
-}
 
 .logobooki{
     width: 3.81813rem;
@@ -57,9 +54,48 @@ border: 1px solid var(--Blue, #0065FC);
 background: var(--Blue, #0065FC);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       }
+      .title{
+        margin-bottom: 0.8rem;
+        margin-left: 1rem;
+    }
+    .titletwo{
+      margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    }
+    .nighttwo{
+      margin-bottom: 2.8rem;
+      margin-left: 1rem;
+  }
+    .night{
+      margin-bottom: 0.8rem;
+      margin-left: 1rem;
+  }
+  .card-ratingtwo{
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+  .card-rating{
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+      .border{
+        padding: 20px 19px;
+      }
       .buttongroup{
         display: flex;
         margin-bottom: 1rem;
+      }
+      .marseille{
+        margin-bottom: 1.90rem;
+        margin-top: 2rem;
+      }
+      h1{
+        display: flex;
+        margin-bottom: 1.20rem;
+      }
+      #filterbutton{
+        margin-right: 0.8rem;
       }
       .filterbarlayout{
         margin-right: 3rem;
@@ -77,10 +113,10 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         margin-left: 1.5rem;
       }
       .tabtwo{
-        margin-bottom: 1rem;
         order: 1;
         padding: 1rem;
         margin-left: 0.3rem;
+        margin-bottom: 2.15rem;
       }
       .tabthree{
         flex-direction: column;
@@ -107,8 +143,19 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       }
       footer{
         flex-direction: column;
+        width: 100%;
       }
-      
+      .footergroup{
+        margin-left: 1.90rem;
+        margin-bottom: 3rem;
+      }
+      li{
+        margin-bottom: 1rem;
+      }
+      .h7{
+        margin-bottom: 0.9rem;
+        margin-top: 0.9rem;
+      }
   }
   
   

@@ -306,6 +306,7 @@ body {
     .cardthree {
         flex-shrink: 0;
         align-self: stretch;
+        border-radius: 1.25rem 1.25rem 0rem 0rem;
     }
 
     .cardthreelayout {
@@ -314,8 +315,7 @@ body {
         justify-content: flex-end;
         align-items: center;
         flex: 1 0 0;
-        border-radius: 1.25rem;
-        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+        margin-bottom: 1.20rem;
     }
 
     .border {
@@ -326,6 +326,7 @@ body {
         align-self: stretch;
         border-radius: 0rem 0rem 1.25rem 1.25rem;
         background: White, #FFF;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     }
 
     footer {

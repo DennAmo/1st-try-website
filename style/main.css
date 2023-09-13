@@ -261,6 +261,7 @@ body .tabthree {
 body .cardthree {
   flex-shrink: 0;
   align-self: stretch;
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
 }
 body .cardthreelayout {
   display: flex;
@@ -268,8 +269,7 @@ body .cardthreelayout {
   justify-content: flex-end;
   align-items: center;
   flex: 1 0 0;
-  border-radius: 1.25rem;
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.2rem;
 }
 body .border {
   display: flex;
@@ -279,6 +279,7 @@ body .border {
   align-self: stretch;
   border-radius: 0rem 0rem 1.25rem 1.25rem;
   background: White, #FFF;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 body footer {
   display: flex;
