@@ -90,6 +90,10 @@ flex-direction: row-reverse;
     background: var(--Grey, #F2F2F2);
   }
 
+  .secondcolumn{
+    margin-left: 2rem;
+  }
+
    .firstcolumn,
    .secondcolumn {
     margin: 1rem;
@@ -147,8 +151,6 @@ flex-direction: row-reverse;
     gap: 0.9375rem;
   }
   footer{
-    align-self: stretch;
-    margin-left: 8rem;
-    width: 100%;
+    width: 90rem;
   }
 }

@@ -1,4 +1,4 @@
-@media (min-width: 1024px) and (max-width: 1600px){
+@media (min-width: 1024px) and (max-width: 1599px){
   header {
     gap: 62rem;
   }
@@ -87,7 +87,9 @@ flex-direction: row-reverse;
     padding: 1.875rem;
     background: var(--Grey, #F2F2F2);
   }
-
+  .secondcolumn{
+    margin-left: 1.2rem;
+  }
    .firstcolumn,
    .secondcolumn {
     margin: 1rem;
@@ -146,7 +148,6 @@ flex-direction: row-reverse;
   }
   footer{
     align-self: stretch;
-    margin-left: 8rem;
-    width: 100%;
+    width: 87rem;
   }
 }

@@ -1,4 +1,4 @@
-@media (min-width: 376px) and (max-width: 1024px) {
+@media (min-width: 376px) and (max-width: 1023px) {
     header{
         gap: 32.41256rem; 
     }
@@ -81,6 +81,7 @@ background: var(--Grey, #F2F2F2);
 }
 h3{
     padding-left: 2rem;
+    padding-top: 2rem;
 }
 .titletabtwo{
     gap: 31rem;
@@ -101,7 +102,8 @@ padding-left: 10rem;
 }
 footer{
     gap: 1.875rem;
-    margin-left: 3.12rem;
+    margin-left: 6.12rem;
+    width: 53rem;
 }
 .footergroup{
 padding: 1.25rem;;

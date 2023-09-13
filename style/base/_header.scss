@@ -112,7 +112,9 @@ body {
         padding-top: 0.80rem;
         border: 1px solid #F2F2F2;
     }
-
+.night{
+    margin-bottom: 0.5rem;
+}
     .night,
     .nighttwo {
         font-size: 0.875rem;
@@ -178,7 +180,9 @@ body {
         font-size: 1.375rem;
         font-weight: 700;
     }
-
+.card-rating{
+    padding-bottom: 0.5rem;
+}
     .firstcolumn {
         align-items: flex-start;
     }
@@ -222,7 +226,6 @@ body {
 
     .secondcolumn {
         align-items: flex-start;
-        margin-left: 0.3rem;
     }
 
     .plus {
@@ -244,9 +247,14 @@ body {
         font-size: 1.375rem;
         font-weight: 700;
         width: 18.76925rem;
-        ;
+        margin-bottom: 1.20rem;
     }
-
+.titletwo{
+    margin-bottom: 0.5rem;
+}
+.title{
+    margin-bottom: 0.6rem;
+}
     .titletabtwo {
         display: flex;
         align-items: center;
@@ -263,6 +271,7 @@ body {
 
     .nighttwo {
         font-size: 0.875rem;
+        margin-bottom: 3.5rem;
     }
 
     h5 {
@@ -342,7 +351,9 @@ body {
         flex: 1 0 0;
         align-self: stretch;
     }
-
+li{
+    margin-bottom: 0.9rem;
+}
     .footergroup {
         display: flex;
         flex-direction: column;
