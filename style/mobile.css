@@ -1,162 +1,233 @@
-@media (max-width:375px){
- header{
-flex-direction: column;
-align-items: center;
-align-self: stretch;
- }
-    .logolayout{ 
-padding: 1.875rem;
-gap: 0.625rem;
-margin-left: 3.5rem;
-}
+@media (max-width:768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+  }
 
-.buttonlayout{
-  gap: 4rem;
-}
+  .logolayout {
+    padding: 1.875rem;
+    gap: 0.625rem;
+    margin-left: 6rem;
+  }
 
-.logobooki{
-    width: 3.81813rem;
-height: 1.1875rem;
+  .buttonlayout {
+    gap: 115px;
+  }
+.infolayout{
+  margin-left: 8rem;
 }
-.buttonmenu{
-gap: 0.9375rem;
-align-self: stretch;
-}
-body{
-gap: 2.1875rem;
-}
-.menulayout{
+  #button1,
+  #button2 {
+    background-color: white;
+    border-style: hidden;
+    position: relative;
+  }
+
+  #button1:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -0.94rem;
+    width: 200%;
+    height: 2px;
+    background-color: blue;
+    transform: translateY(-100%);
+  }
+
+  #button2:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -0.94rem;
+    width: 289%;
+    height: 2px;
+    background-color: blue;
+    transform: translateY(-100%);
+  }
+
+  #button1:hover,
+  #button2:hover {
+    color: blue;
+  }
+
+  #button2 {
+    width: 3.9375rem;
+  }
+
+  .logobooki {
+    margin-right: 4rem;
+  }
+
+  .buttonmenu {
+    gap: 0.9375rem;
+    align-self: stretch;
+  }
+
+  .menulayout {
+    margin-top: 2.2rem;
     display: flex;
     padding: 0rem 1.25rem;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 2.1875rem;
+    align-items: center;
     align-self: stretch;
-}
-  .menutextlayout{
-gap: 0.5rem;
-margin-left: 1.3rem;
   }
-    #searchbutton {
-      padding: 10px;
-      text-align: center;
-      position: relative;
-      display: none;
-    }
-    #searchbuttontwo {
-        display: inline-flex;
-        padding: 0.9375rem 1rem;
-        align-items: center;
-        gap: 0.625rem;
-        flex-shrink: 0;
-        border-radius: 0.9375rem;
-border: 1px solid var(--Blue, #0065FC);
-background: var(--Blue, #0065FC);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      }
-      .title{
-        margin-bottom: 0.8rem;
-        margin-left: 1rem;
-    }
-    .titletwo{
-      margin-bottom: 0.6rem;
+
+  .citycentertext {
+    margin-top: 0.3rem;
+    margin-bottom: 2.1rem;
+  }
+
+  .menutextlayout {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1.3rem;
+  }
+
+  .searchmodulelayout {
+    margin-bottom: 2.1rem;
+  }
+
+  #searchbutton {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    display: none;
+  }
+
+  #searchbuttontwo {
+    display: inline-flex;
+    padding: 0.9375rem 1rem;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    border: 1px solid var(--Blue, #0065FC);
+    background: var(--Blue, #0065FC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .title {
+    margin-bottom: 0.8rem;
+    margin-left: 1rem;
+  }
+
+  .titletwo {
+    margin-bottom: 0.6rem;
     margin-top: 0.6rem;
     margin-left: 0.6rem;
-    }
-    .nighttwo{
-      margin-bottom: 2.8rem;
-      margin-left: 1rem;
   }
-    .night{
-      margin-bottom: 0.8rem;
-      margin-left: 1rem;
-  }
-  .card-ratingtwo{
-    margin-left: 1rem;
-    padding-bottom: 1rem;
-}
-  .card-rating{
-    margin-left: 1rem;
-    padding-bottom: 1rem;
-}
-      .border{
-        padding: 20px 19px;
-      }
-      .buttongroup{
-        display: flex;
-        margin-bottom: 1rem;
-      }
-      .marseille{
-        margin-bottom: 1.90rem;
-        margin-top: 2rem;
-      }
-      h1{
-        display: flex;
-        margin-bottom: 1.20rem;
-      }
-      #filterbutton{
-        margin-right: 0.8rem;
-      }
-      .filterbarlayout{
-        margin-right: 3rem;
-      }
-      .infolayout{
-        margin-left: 2.5rem;
-      }
-      .containertab{
-        display: flex;
-        flex-direction: column;
-      }
-      .tabone{
-        order: 0;
-        background-color: white;
-        margin-left: 1.5rem;
-      }
-      .tabtwo{
-        order: 1;
-        padding: 1rem;
-        margin-left: 0.3rem;
-        margin-bottom: 2.15rem;
-      }
-      .tabthree{
-        flex-direction: column;
-      }
-      .tabtwolayout{
-        width: 90%;
-      }
-      .card{
-        margin-block: 1rem;
-      }
-      .cardtwo{
-        margin-bottom: 1rem;
-      }
-      .fred{
-        width: 20rem;
-      }
-      .cardthree{
-        width: 20rem;
-        height: 8rem;
-        object-fit: cover;
-      }
-      .sectionactivite{
-        margin-left: 1.3rem;
-      }
-      footer{
-        flex-direction: column;
-        width: 23.4rem;
-      }
-      .footergroup{
-        margin-left: 1.90rem;
-        margin-bottom: 3rem;
-      }
-      li{
-        margin-bottom: 1rem;
-      }
-      .h7{
-        margin-bottom: 0.9rem;
-        margin-top: 0.9rem;
-      }
-  }
-  
-  
 
+  .nighttwo {
+    margin-bottom: 2.8rem;
+    margin-left: 1rem;
+  }
+
+  .night {
+    margin-bottom: 0.8rem;
+    margin-left: 1rem;
+  }
+
+  .card-ratingtwo {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .card-rating {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .border {
+    padding: 20px 19px;
+  }
+
+  .buttongroup {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .marseille {
+    margin-bottom: 1.90rem;
+    margin-top: 2rem;
+  }
+
+  h1 {
+    display: flex;
+    margin-bottom: 1.20rem;
+    margin-right: 4rem;
+  }
+
+  .filterbutton {
+    margin-right: 0.8rem;
+  }
+
+  .filterbarlayout {
+    margin-right: 3rem;
+  }
+
+  .containertab {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tabone {
+    order: 0;
+    background-color: white;
+    margin-left: 1.5rem;
+    align-self: center;
+  }
+
+  .tabtwo {
+    order: 1;
+    padding: 1rem;
+    margin-bottom: 2.15rem;
+    width: 96%;
+  }
+
+  .tabthree {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-block: 1rem;
+  }
+
+  .cardtwo {
+    margin-bottom: 1rem;
+  }
+
+  .fred {
+    width: 20rem;
+  }
+
+  .cardthree {
+    width: 20rem;
+    height: 8rem;
+    object-fit: cover;
+  }
+
+  .sectionactivite {
+    margin-top: 2rem;
+    align-items: center;
+    align-self: center;
+  }
+
+  footer {
+    flex-direction: column;
+    width: 100%
+  }
+
+  .footergroup {
+    margin-left: 1.90rem;
+    margin-bottom: 3rem;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  .h7 {
+    margin-bottom: 0.9rem;
+    margin-top: 0.9rem;
+  }
+}
