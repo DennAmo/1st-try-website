@@ -14,9 +14,7 @@
   .buttonlayout {
     gap: 115px;
   }
-.infolayout{
-  margin-left: 8rem;
-}
+
   #button1,
   #button2 {
     background-color: white;
@@ -28,7 +26,7 @@
     content: "";
     position: absolute;
     bottom: -0.94rem;
-    width: 200%;
+    width: 100%;
     height: 2px;
     background-color: blue;
     transform: translateY(-100%);
@@ -38,7 +36,7 @@
     content: "";
     position: absolute;
     bottom: -0.94rem;
-    width: 289%;
+    width: 100%;
     height: 2px;
     background-color: blue;
     transform: translateY(-100%);
