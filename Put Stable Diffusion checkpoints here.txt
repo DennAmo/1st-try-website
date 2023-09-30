@@ -1,6 +1,4 @@
-https://civitai.com/models/112902/dreamshaper-xl10
-https://civitai.com/models/94809/realcartoon3d
-https://civitai.com/models/23521?modelVersionId=28089
-https://civitai.com/models/118441/lah-mysterious-or-sdxl
-https://civitai.com/models/120765?modelVersionId=154625
-https://civitai.com/models/4201
+https://huggingface.co/runwayml/stable-diffusion-v1-5/tree/main
+https://civitai.com/models/24779/dark-sushi-mix-mix
+https://civitai.com/models/5414/pastel-mix-stylized-anime-model
+https://civitai.com/models/4468/counterfeit-v30
